@@ -9,6 +9,7 @@
     */
 
     //ENTRADA
+    let carrosSUVOriginal = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     const remover = prompt(`Analisando os seguintes carros: ${carrosSUV.join(", ")}. Qual você deseja remover da lista?`)
     let procurar = carrosSUV.indexOf(remover);
@@ -17,6 +18,8 @@
     //PROCESSAMENTO
    
     //SAÍDA
-    document.write(`Lista atualizada: ${carrosSUV.join(", ")}`);
+    document.write(`A lista original era: ${carrosSUVOriginal.join(", ")}. <br>
+    O carro ${remover} foi removido da lista. <br>
+    Lista atualizada: ${carrosSUV.join(", ")}.`);
 
 </script>
